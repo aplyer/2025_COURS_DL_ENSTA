@@ -1,0 +1,37 @@
+name: coursDLgpu
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - scikit-image
+  - pillow
+  - requests
+  - tqdm
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - ipywidgets
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  - pytorch::torchtext
+  - pytorch-cuda
+  - pip:
+      - accelerate
+      - bitsandbytes
+      - datasets
+      - evaluate
+      - peft
+      - safetensors
+      - sentencepiece
+      - transformers
