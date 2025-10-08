@@ -1,11 +1,10 @@
 name: coursDLgpu
 channels:
-  - pytorch
   - nvidia
   - conda-forge
   - defaults
 dependencies:
-  - python=3.10
+  - python=3.13
   - pip
   - numpy
   - scipy
@@ -21,12 +20,10 @@ dependencies:
   - notebook
   - ipykernel
   - ipywidgets
-  - pytorch::pytorch
-  - pytorch::torchvision
-  - pytorch::torchaudio
-  - pytorch::torchtext
-  - pytorch-cuda
   - pip:
+      - torch --index-url https://download.pytorch.org/whl/cu129
+      - torchvision --index-url https://download.pytorch.org/whl/cu129
+      - torchaudio --index-url https://download.pytorch.org/whl/cu129
       - accelerate
       - bitsandbytes
       - datasets
